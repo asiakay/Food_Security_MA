@@ -72,7 +72,7 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
             placeholder="Search by name, location, or activity..."
             value={filters.searchTerm}
             onChange={handleSearchChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
               id="snapHip"
               value={filters.snapHip === null ? 'all' : filters.snapHip ? 'yes' : 'no'}
               onChange={(e) => handleSnapHipChange(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
             >
               <option value="all">All</option>
               <option value="yes">Yes</option>
@@ -101,7 +101,7 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
               id="blackOwned"
               value={filters.blackOwned === null ? 'all' : filters.blackOwned ? 'yes' : 'no'}
               onChange={(e) => handleBlackOwnedChange(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
             >
               <option value="all">All</option>
               <option value="yes">Yes</option>
@@ -117,7 +117,7 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
               id="ejZone"
               value={filters.ejZone === null ? 'all' : filters.ejZone ? 'yes' : 'no'}
               onChange={(e) => handleEjZoneChange(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
             >
               <option value="all">All</option>
               <option value="yes">Yes</option>
@@ -133,7 +133,7 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
               id="indoorOutdoor"
               value={filters.indoorOutdoor}
               onChange={(e) => handleIndoorOutdoorChange(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
             >
               <option value="all">All</option>
               <option value="outdoor">Outdoor</option>
