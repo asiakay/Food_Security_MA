@@ -14,12 +14,15 @@ function App() {
     blackOwned: null,
     ejZone: null,
     indoorOutdoor: 'all',
+    businessType: 'all',
+    category: 'all',
+    listingTier: 'all',
   });
 
-  const businesses: Business[] = businessesData;
+  const businesses: Business[] = businessesData as Business[];
 
   const filteredBusinesses = useMemo(() => {
-    return businesses.filter((business) => {
+    const filtered = businesses.filter((business) => {
       const searchLower = filters.searchTerm.toLowerCase();
       const matchesSearch =
         !filters.searchTerm ||
@@ -56,13 +59,40 @@ function App() {
           (business.indoor_outdoor.toLowerCase().includes('hybrid') ||
             business.indoor_outdoor.toLowerCase().includes('/')));
 
+      const matchesBusinessType =
+        filters.businessType === 'all' ||
+        business.business_type === filters.businessType;
+
+      const matchesCategory =
+        filters.category === 'all' ||
+        (business.categories && business.categories.includes(filters.category));
+
+      const matchesListingTier =
+        filters.listingTier === 'all' ||
+        business.listing_tier === filters.listingTier;
+
       return (
         matchesSearch &&
         matchesSnapHip &&
         matchesBlackOwned &&
         matchesEjZone &&
-        matchesIndoorOutdoor
+        matchesIndoorOutdoor &&
+        matchesBusinessType &&
+        matchesCategory &&
+        matchesListingTier
       );
+    });
+
+    // Sort by listing tier (premium > featured > basic) and featured status
+    return filtered.sort((a, b) => {
+      const tierOrder = { premium: 3, featured: 2, basic: 1 };
+      const aTier = tierOrder[a.listing_tier || 'basic'];
+      const bTier = tierOrder[b.listing_tier || 'basic'];
+
+      if (aTier !== bTier) return bTier - aTier;
+      if (a.featured && !b.featured) return -1;
+      if (!a.featured && b.featured) return 1;
+      return 0;
     });
   }, [businesses, filters]);
 
@@ -75,9 +105,9 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-primary-700 text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold">Massachusetts Food Security Directory</h1>
+          <h1 className="text-3xl font-bold">Massachusetts Food Security & Sustainable Agriculture Directory</h1>
           <p className="mt-2 text-primary-100">
-            Find local farms, farmers markets, and food access resources
+            Find farms, markets, food access resources, and sustainable building solutions
           </p>
         </div>
       </header>
@@ -127,6 +157,9 @@ function App() {
                       blackOwned: null,
                       ejZone: null,
                       indoorOutdoor: 'all',
+                      businessType: 'all',
+                      category: 'all',
+                      listingTier: 'all',
                     })
                   }
                   className="mt-4 text-primary-600 hover:text-primary-700 font-medium"
