@@ -1,21 +1,43 @@
-# Massachusetts Food Security Business Directory
+# Massachusetts Food Security & Sustainable Agriculture Directory
 
-A modern, interactive web application for exploring farms, farmers markets, and food access resources across Massachusetts and Rhode Island. This directory focuses on food security, environmental justice zones, and community-supported agriculture.
+A modern, interactive web application for exploring farms, farmers markets, food access resources, and sustainable building solutions across Massachusetts and Rhode Island. This directory connects food security initiatives with sustainable agriculture infrastructure, including hempcrete suppliers, greenhouse builders, and solar installers.
 
 ## Features
 
-- **Interactive Directory**: Browse 32+ local farms, farmers markets, and food-related businesses
-- **Advanced Filtering**: Filter by SNAP/HIP acceptance, Black-owned businesses, Environmental Justice zones, and location type
+### Core Directory
+- **Interactive Marketplace**: Browse 40+ farms, markets, suppliers, and service providers
+- **Advanced Filtering**: Filter by:
+  - Business Type (farms, markets, suppliers, service providers, showcase projects)
+  - Categories (hempcrete, greenhouse builders, solar installers, sustainable building)
+  - Listing Tier (premium, featured, basic)
+  - SNAP/HIP acceptance, Black-owned businesses, Environmental Justice zones
 - **Search Functionality**: Search by business name, location, or activities
 - **Map View**: Visualize business locations on an interactive map with OpenStreetMap
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **AI-Powered Data Management**: Automated agents for data enrichment, verification, and discovery
-- **Business Details**: View comprehensive information including:
-  - Contact information (phone, email, website)
+
+### Supplier Marketplace
+- **Supplier Listings**: Hempcrete suppliers, greenhouse builders, solar installers, and agricultural services
+- **Detailed Profiles**: Service areas, certifications, specialties, pricing tiers, and experience
+- **Listing Tiers**: Premium (gold ring), Featured (blue ring), and Basic listings with priority display
+- **Verified Badges**: Verified supplier indicators for trusted businesses
+
+### Showcase Projects
+- **Solar Roots Tiny Greenhouse**: Featured off-grid passive solar greenhouse design
+  - 30cm hempcrete north wall (R-4.0 insulation)
+  - 800W rooftop solar PV with 4.8kWh battery storage
+  - Year-round growing capability in Zone 6a-6b
+  - Open-source, community-replicable design
+  - Budget: $12K-16K | Timeline: 6-8 weeks
+- **Replicable Designs**: Open-source plans and community build support
+
+### Business Features
+- **Comprehensive Information**:
+  - Contact details (phone, email, website)
   - Operating hours and seasons
   - Social media links
-  - Vendor signup information
-  - Location coordinates
+  - Supplier-specific data (certifications, service areas, specialties)
+  - Showcase project details (budget, timeline, features)
+- **AI-Powered Data Management**: Automated agents for data enrichment, verification, and discovery
 
 ## Technology Stack
 
@@ -176,13 +198,36 @@ This directory prioritizes businesses in Environmental Justice (EJ) zones, which
 
 Many businesses in this directory accept SNAP (Supplemental Nutrition Assistance Program) and HIP (Healthy Incentives Program) benefits, making fresh, local food more accessible to all community members.
 
+## Supplier Marketplace Revenue Model
+
+This directory implements a tiered marketplace model:
+
+### Listing Tiers
+- **Premium ($200-500/month)**: Gold ring highlight, top placement, featured badge, verified status
+- **Featured ($50-300/month)**: Blue ring highlight, priority placement, verified status
+- **Basic (Free)**: Standard listing with all core features
+
+### Revenue Streams
+1. Supplier listing fees
+2. Featured placements
+3. Lead generation (5-10% commission on projects)
+4. Advertising opportunities
+5. Affiliate commissions (materials/services)
+6. Premium analytics for suppliers
+
+**Projected Year 1 Revenue**: $25K-60K with 10-20 active suppliers
+
+See [GREENHOUSE_ROI_ANALYSIS.md](./GREENHOUSE_ROI_ANALYSIS.md) for detailed financial projections.
+
 ## Future Enhancements
 
 Potential future features include:
+- Lead generation and tracking system
+- Supplier quote request forms
 - User reviews and ratings
 - Calendar integration for seasonal markets
 - Mobile app version
-- Admin panel for business owners to update their information
+- Admin panel for suppliers to update their information
 - Advanced routing and directions
 - Multi-language support
 - Accessibility improvements (WCAG AAA compliance)

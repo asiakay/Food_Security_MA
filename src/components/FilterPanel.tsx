@@ -39,6 +39,27 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
     });
   };
 
+  const handleBusinessTypeChange = (value: string) => {
+    onFilterChange({
+      ...filters,
+      businessType: value as any,
+    });
+  };
+
+  const handleCategoryChange = (value: string) => {
+    onFilterChange({
+      ...filters,
+      category: value as any,
+    });
+  };
+
+  const handleListingTierChange = (value: string) => {
+    onFilterChange({
+      ...filters,
+      listingTier: value as any,
+    });
+  };
+
   const clearFilters = () => {
     onFilterChange({
       searchTerm: '',
@@ -46,6 +67,9 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
       blackOwned: null,
       ejZone: null,
       indoorOutdoor: 'all',
+      businessType: 'all',
+      category: 'all',
+      listingTier: 'all',
     });
   };
 
@@ -76,7 +100,66 @@ export default function FilterPanel({ filters, onFilterChange, resultCount }: Fi
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div>
+            <label htmlFor="businessType" className="block text-sm font-medium text-gray-700 mb-1">
+              Business Type
+            </label>
+            <select
+              id="businessType"
+              value={filters.businessType}
+              onChange={(e) => handleBusinessTypeChange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
+            >
+              <option value="all">All Types</option>
+              <option value="farm">Farms</option>
+              <option value="farmers_market">Farmers Markets</option>
+              <option value="food_business">Food Businesses</option>
+              <option value="supplier">Suppliers</option>
+              <option value="service_provider">Service Providers</option>
+              <option value="showcase_project">Showcase Projects</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-1">
+              Category
+            </label>
+            <select
+              id="category"
+              value={filters.category}
+              onChange={(e) => handleCategoryChange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
+            >
+              <option value="all">All Categories</option>
+              <option value="produce_farm">Produce Farms</option>
+              <option value="farmers_market">Farmers Markets</option>
+              <option value="hempcrete_supplier">Hempcrete Suppliers</option>
+              <option value="greenhouse_builder">Greenhouse Builders</option>
+              <option value="solar_installer">Solar Installers</option>
+              <option value="sustainable_building">Sustainable Building</option>
+              <option value="agricultural_services">Agricultural Services</option>
+              <option value="showcase_project">Showcase Projects</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="listingTier" className="block text-sm font-medium text-gray-700 mb-1">
+              Listing Tier
+            </label>
+            <select
+              id="listingTier"
+              value={filters.listingTier}
+              onChange={(e) => handleListingTierChange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
+            >
+              <option value="all">All Tiers</option>
+              <option value="premium">Premium</option>
+              <option value="featured">Featured</option>
+              <option value="basic">Basic</option>
+            </select>
+          </div>
+
           <div>
             <label htmlFor="snapHip" className="block text-sm font-medium text-gray-700 mb-1">
               SNAP/HIP Accepted
