@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.local
+.env.production
+
+# AI Agent data files
+api/data/
+*.backup.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

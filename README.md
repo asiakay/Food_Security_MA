@@ -9,6 +9,7 @@ A modern, interactive web application for exploring farms, farmers markets, and 
 - **Search Functionality**: Search by business name, location, or activities
 - **Map View**: Visualize business locations on an interactive map with OpenStreetMap
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **AI-Powered Data Management**: Automated agents for data enrichment, verification, and discovery
 - **Business Details**: View comprehensive information including:
   - Contact information (phone, email, website)
   - Operating hours and seasons
@@ -23,6 +24,9 @@ A modern, interactive web application for exploring farms, farmers markets, and 
 - **Styling**: Tailwind CSS
 - **Mapping**: Leaflet & React-Leaflet
 - **State Management**: React hooks (useState, useMemo)
+- **AI Integration**: Claude API (Anthropic) for data enrichment
+- **Backend API**: Express.js with TypeScript
+- **Web Scraping**: Cheerio & Axios
 
 ## Getting Started
 
@@ -50,6 +54,36 @@ npm run dev
 ```
 
 4. Open your browser and navigate to `http://localhost:3000`
+
+### AI Agents Setup (Optional)
+
+To use the AI-powered data enrichment features:
+
+1. Get an Anthropic API key from [console.anthropic.com](https://console.anthropic.com/)
+
+2. Create a `.env` file:
+```bash
+cp .env.example .env
+```
+
+3. Add your API key to `.env`:
+```
+ANTHROPIC_API_KEY=sk-ant-api03-...
+```
+
+4. Run the AI agents:
+```bash
+# Enrich missing data
+npm run agent:enrich
+
+# Verify existing data
+npm run agent:verify
+
+# Discover new markets
+npm run agent:discover
+```
+
+See [AI_AGENTS_GUIDE.md](./AI_AGENTS_GUIDE.md) for detailed documentation.
 
 ### Build for Production
 
