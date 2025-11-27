@@ -1077,5 +1077,136 @@
       "years_experience": 5,
       "pricing_tier": "Land trust services - member-based"
     }
+  },
+  {
+    "id": 3001,
+    "business_name": "HempStone",
+    "location": "Massachusetts (serves all New England)",
+    "activity": "Hempcrete construction, natural building materials supply, consulting, training workshops for sustainable building",
+    "website": "https://hempstone.net",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(413) 326-1860",
+    "email": "info@hempstone.net",
+    "hours": "Mon-Fri 8am-6pm, Sat-Sun Closed",
+    "season": "Year-round",
+    "snap_hip": "",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "black_owned": "",
+    "indoor_outdoor": "Indoor",
+    "ej_zone": "",
+    "business_type": "supplier",
+    "categories": [
+      "hempcrete_supplier",
+      "sustainable_building",
+      "agricultural_services"
+    ],
+    "listing_tier": "featured",
+    "featured": true,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "New England (MA, VT, NH, ME, CT, RI) and Upstate NY",
+      "certifications": [
+        "US Hemp Building Association Regional Leaders"
+      ],
+      "specialties": [
+        "Hempcrete wall systems",
+        "Hemp hurd and lime binders",
+        "Natural hydraulic lime",
+        "Training workshops",
+        "Design consultation",
+        "Material testing"
+      ],
+      "years_experience": 8,
+      "pricing_tier": "Contact for quotes - Construction, consulting, and supply services"
+    }
+  },
+  {
+    "id": 3002,
+    "business_name": "Hempitecture",
+    "location": "Jerome, ID (5 distribution centers nationwide, East Coast facility opening 2025)",
+    "activity": "HempWool insulation, hempcrete materials, sustainable building products - manufactured in USA",
+    "website": "https://www.hempitecture.com",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(208) 218-8698",
+    "email": "sales@hempitecture.com",
+    "hours": "Contact for distribution center hours",
+    "season": "Year-round",
+    "snap_hip": "",
+    "vendor_info": "Order at buy.hempitecture.com",
+    "social": "",
+    "latitude": 42.7296,
+    "longitude": -114.5189,
+    "black_owned": "",
+    "indoor_outdoor": "Indoor",
+    "ej_zone": "",
+    "business_type": "supplier",
+    "categories": [
+      "hempcrete_supplier",
+      "sustainable_building"
+    ],
+    "listing_tier": "featured",
+    "featured": true,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Nationwide with 5 distribution centers, East Coast expansion 2025",
+      "certifications": [
+        "Made in USA",
+        "Sustainably sourced materials"
+      ],
+      "specialties": [
+        "HempWool insulation batts (R3.7/inch)",
+        "PlantPanel X rigid boards",
+        "FiberFill blown-in insulation",
+        "Hempcrete materials",
+        "HempBinder lime products"
+      ],
+      "years_experience": 10,
+      "pricing_tier": "Order online at buy.hempitecture.com or contact sales"
+    }
+  },
+  {
+    "id": 3003,
+    "business_name": "Hemp Block USA",
+    "location": "Nationwide (ships to New England)",
+    "activity": "Load-bearing hempcrete block walling system - interlocking blocks made from hemp, lime, and water",
+    "website": "https://hempblockusa.com",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(855) 795-0012",
+    "email": "",
+    "hours": "Contact for availability",
+    "season": "Year-round",
+    "snap_hip": "",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 39.8283,
+    "longitude": -98.5795,
+    "black_owned": "",
+    "indoor_outdoor": "Indoor",
+    "ej_zone": "",
+    "business_type": "supplier",
+    "categories": [
+      "hempcrete_supplier",
+      "sustainable_building"
+    ],
+    "listing_tier": "basic",
+    "featured": false,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Nationwide shipping",
+      "specialties": [
+        "Interlocking hempcrete blocks",
+        "Load-bearing block system",
+        "Hemp-lime-water composite",
+        "Modular building system"
+      ],
+      "years_experience": 6,
+      "pricing_tier": "Toll-free: (855) 795-0012 for quotes"
+    }
   }
 ]
