@@ -1,0 +1,90 @@
+name: AI Data Verification
+
+on:
+  schedule:
+    # Run every Monday at 4am UTC
+    - cron: '0 4 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  verify-data:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run verification agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run agent:verify
+
+      - name: Check for issues
+        id: check_issues
+        run: |
+          if [ -f api/data/verification-results.json ]; then
+            ISSUES=$(jq '[.[] | select(.isValid == false)] | length' api/data/verification-results.json)
+            echo "issues=$ISSUES" >> $GITHUB_OUTPUT
+            echo "has_results=true" >> $GITHUB_OUTPUT
+          else
+            echo "issues=0" >> $GITHUB_OUTPUT
+            echo "has_results=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit verification results
+        if: steps.check_issues.outputs.has_results == 'true'
+        run: |
+          git config --global user.name 'AI Agent Bot'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add api/data/verification-results.json
+          git commit -m "chore: AI data verification results" || echo "No changes to commit"
+          git push || echo "Nothing to push"
+
+      - name: Create issue if problems found
+        if: steps.check_issues.outputs.issues > 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const verifications = JSON.parse(fs.readFileSync('api/data/verification-results.json', 'utf8'));
+            const issues = verifications.filter(v => !v.isValid);
+
+            const body = `## ⚠️ Data Quality Issues Detected
+
+Found **${issues.length}** data quality issues that need attention!
+
+${issues.slice(0, 10).map((issue, i) => `
+### ${i + 1}. Business ID ${issue.businessId}
+- **Field:** ${issue.field}
+- **Current Value:** ${issue.currentValue || 'empty'}
+- **Issues:**
+${issue.issues.map(i => `  - ${i}`).join('\n')}
+${issue.suggestions.length > 0 ? `- **Suggestions:**\n${issue.suggestions.map(s => `  - ${s}`).join('\n')}` : ''}
+`).join('\n')}
+
+${issues.length > 10 ? `\n_...and ${issues.length - 10} more issues. Review the full verification results._` : ''}
+
+Review these issues and update the directory data accordingly.
+            `;
+
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `AI Agent: ${issues.length} Data Quality Issues Found`,
+              body: body,
+              labels: ['ai-agent', 'data-quality', 'needs-review']
+            });

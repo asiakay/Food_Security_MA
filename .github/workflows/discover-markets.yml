@@ -1,0 +1,86 @@
+name: AI Market Discovery
+
+on:
+  schedule:
+    # Run on 1st of every month at 3am UTC
+    - cron: '0 3 1 * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  discover-markets:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run discovery agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run agent:discover
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push discoveries
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --global user.name 'AI Agent Bot'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add api/data/new-market-discoveries.json
+          git commit -m "chore: AI new market discoveries"
+          git push
+
+      - name: Create issue for review
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const discoveries = JSON.parse(fs.readFileSync('api/data/new-market-discoveries.json', 'utf8'));
+
+            const body = `## 🌟 New Markets Discovered by AI Agent
+
+Found **${discoveries.length}** potential new markets to review!
+
+${discoveries.map((d, i) => `
+### ${i + 1}. ${d.business_name}
+- **Location:** ${d.location}
+- **Activity:** ${d.activity}
+- **Confidence:** ${d.confidence}
+- **Website:** ${d.website || 'Not found'}
+${d.phone ? `- **Phone:** ${d.phone}` : ''}
+${d.email ? `- **Email:** ${d.email}` : ''}
+- **Source:** ${d.source}
+`).join('\n')}
+
+Review these discoveries in the admin dashboard and add valid ones to the directory.
+            `;
+
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `AI Agent: ${discoveries.length} New Markets Discovered`,
+              body: body,
+              labels: ['ai-agent', 'new-discovery', 'needs-review']
+            });
