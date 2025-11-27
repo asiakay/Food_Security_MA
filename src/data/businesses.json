@@ -672,389 +672,410 @@
     "ej_zone": "Near EJ"
   },
   {
-    "id": 1001,
-    "business_name": "Solar Roots Tiny Greenhouse",
-    "location": "New England, MA",
-    "activity": "Year-round passive solar greenhouse design - hempcrete, off-grid PV, rainwater collection",
-    "website": "https://github.com/asiakay/Food_Security_MA",
+    "id": 2001,
+    "business_name": "Urban Farming Institute of Boston",
+    "location": "Mattapan, MA",
+    "activity": "Farmer training, urban agriculture, green jobs, local food system development across 7 farms in Roxbury, Dorchester, and Mattapan",
+    "website": "https://www.urbanfarminginstitute.org",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(617) 989-9920",
+    "email": "",
+    "hours": "See website for program schedules",
+    "season": "Year-round programs",
+    "snap_hip": "",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 42.2668,
+    "longitude": -71.0929,
+    "black_owned": "Yes - Black-led organization",
+    "indoor_outdoor": "Outdoor",
+    "ej_zone": "Yes (Mattapan EJ)",
+    "business_type": "service_provider",
+    "categories": [
+      "agricultural_services",
+      "sustainable_building"
+    ],
+    "listing_tier": "featured",
+    "featured": true,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Greater Boston - Roxbury, Dorchester, Mattapan",
+      "specialties": [
+        "Urban agriculture training",
+        "Community food systems",
+        "Green collar job creation",
+        "Youth development",
+        "Farmer education programs"
+      ],
+      "years_experience": 15,
+      "pricing_tier": "Community-based programming - contact for details"
+    }
+  },
+  {
+    "id": 2002,
+    "business_name": "Metro Herbs / Metro Microgreens",
+    "location": "Dorchester, MA",
+    "activity": "Urban microgreens indoor farming, education, and consulting services with focus on affordability and sustainable practices",
+    "website": "https://www.mhboston.com",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(617) 637-9454",
+    "email": "matthew@mhboston.com",
+    "hours": "Contact for availability",
+    "season": "Year-round indoor production",
+    "snap_hip": "",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 42.2988,
+    "longitude": -71.0646,
+    "black_owned": "Yes",
+    "indoor_outdoor": "Indoor",
+    "ej_zone": "Yes (Dorchester EJ)",
+    "business_type": "farm",
+    "categories": [
+      "produce_farm",
+      "agricultural_services"
+    ],
+    "listing_tier": "featured",
+    "featured": true,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Greater Boston",
+      "specialties": [
+        "Microgreens production",
+        "Urban indoor farming",
+        "Education and consulting",
+        "Value-added products"
+      ],
+      "years_experience": 5,
+      "pricing_tier": "Wholesale and retail - contact for pricing"
+    }
+  },
+  {
+    "id": 2003,
+    "business_name": "Gardening the Community",
+    "location": "Springfield, MA",
+    "activity": "Food justice organization focused on youth development, urban agriculture, and sustainable living to build healthy equitable communities",
+    "website": "https://www.gardeningthecommunity.org",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(413) 693-5340",
+    "email": "info@gardeningthecommunity.org",
+    "hours": "Farm Store: (413) 301-6574 - see website for hours",
+    "season": "Year-round programs and seasonal farm store",
+    "snap_hip": "Yes",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 42.1015,
+    "longitude": -72.5898,
+    "black_owned": "Black-led organization",
+    "indoor_outdoor": "Outdoor",
+    "ej_zone": "Yes (Springfield EJ)",
+    "business_type": "service_provider",
+    "categories": [
+      "agricultural_services",
+      "produce_farm"
+    ],
+    "listing_tier": "featured",
+    "featured": true,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Springfield, MA and surrounding areas",
+      "specialties": [
+        "Youth development",
+        "Urban agriculture",
+        "Food justice advocacy",
+        "Sustainable living education",
+        "Community health"
+      ],
+      "years_experience": 10,
+      "pricing_tier": "Farm store and community programs - sliding scale available"
+    }
+  },
+  {
+    "id": 2004,
+    "business_name": "Tony Andrews Farm",
+    "location": "Falmouth, MA",
+    "activity": "Strawberry cultivation and pick-your-own operation - historically one of the first Black-owned farms supplying Boston markets",
+    "website": "",
     "instagram": "",
     "facebook": "",
     "phone": "",
     "email": "",
-    "hours": "Open-source design available 24/7",
-    "season": "Year-round growing capability",
+    "hours": "Seasonal - contact for pick-your-own hours",
+    "season": "Spring through Fall (strawberry season)",
     "snap_hip": "",
     "vendor_info": "",
     "social": "",
-    "latitude": 42.3601,
-    "longitude": -71.0589,
-    "black_owned": "",
-    "indoor_outdoor": "Hybrid",
+    "latitude": 41.5515,
+    "longitude": -70.6142,
+    "black_owned": "Yes",
+    "indoor_outdoor": "Outdoor",
     "ej_zone": "",
-    "business_type": "showcase_project",
+    "business_type": "farm",
     "categories": [
-      "showcase_project",
-      "greenhouse_builder",
-      "sustainable_building"
+      "produce_farm"
     ],
-    "listing_tier": "premium",
-    "featured": true,
+    "listing_tier": "basic",
+    "featured": false,
     "verified": true,
-    "showcase_project": {
-      "is_showcase": true,
-      "project_type": "Off-grid passive solar greenhouse",
-      "design_highlights": [
-        "30cm hempcrete north wall (R-4.0)",
-        "800W rooftop solar PV with 4.8kWh battery",
-        "Passive solar heating with thermal mass",
-        "Rainwater collection and drip irrigation",
-        "Year-round growing in Zone 6a-6b",
-        "4m x 2.5m footprint, 10m² total",
-        "Community-buildable design"
-      ],
-      "budget_range": "$12,000-$16,000",
-      "timeline": "6-8 weeks construction",
-      "replicable": true,
-      "open_source": true
-    },
     "supplier_info": {
-      "service_area": "New England (MA, CT, RI, VT, NH, ME)",
+      "service_area": "Cape Cod and Greater Boston",
       "specialties": [
-        "Hempcrete construction",
-        "Passive solar design",
-        "Off-grid solar systems",
-        "Year-round food production",
-        "Sustainable agriculture infrastructure"
+        "Strawberry cultivation",
+        "Pick-your-own operation",
+        "Fresh produce"
       ],
-      "pricing_tier": "Design plans: Free (open-source) | Consultation: $150/hr | Full build support: Custom quote"
+      "years_experience": 20,
+      "pricing_tier": "Seasonal pricing - contact farm"
     }
   },
   {
-    "id": 1002,
-    "business_name": "New England Hempcrete Co.",
-    "location": "Worcester, MA",
-    "activity": "Hempcrete blocks, binders, and installation services for sustainable building",
-    "website": "https://example.com/nehempcrete",
+    "id": 2005,
+    "business_name": "Shitefoot Farm & Jaebird Farm",
+    "location": "Bellingham, MA (expanded from Roxbury)",
+    "activity": "Fresh local produce including fruits, vegetables, and eggs - woman-owned farm growing without pesticides or chemicals",
+    "website": "https://www.magpieandjaebird.com",
+    "instagram": "@shitefootfarms",
+    "facebook": "",
+    "phone": "",
+    "email": "",
+    "hours": "Contact via website or Instagram",
+    "season": "Seasonal - Spring through Fall",
+    "snap_hip": "",
+    "vendor_info": "Supplies to Eastie Farm in East Boston",
+    "social": "Instagram: @shitefootfarms",
+    "latitude": 42.0867,
+    "longitude": -71.4745,
+    "black_owned": "Yes - Black woman-owned",
+    "indoor_outdoor": "Outdoor",
+    "ej_zone": "",
+    "business_type": "farm",
+    "categories": [
+      "produce_farm"
+    ],
+    "listing_tier": "basic",
+    "featured": false,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Metro Boston and Bellingham area",
+      "specialties": [
+        "Chemical-free produce",
+        "Fruits and vegetables",
+        "Fresh eggs",
+        "Wholesale supply"
+      ],
+      "years_experience": 3,
+      "pricing_tier": "Contact for wholesale and retail pricing"
+    }
+  },
+  {
+    "id": 2006,
+    "business_name": "Juahkumbah Farm",
+    "location": "Lancaster, MA",
+    "activity": "Traditional Liberian crop varieties alongside standard vegetables - operates through World Farmers program",
+    "website": "",
     "instagram": "",
     "facebook": "",
-    "phone": "(508) 555-0100",
-    "email": "info@nehempcrete.com",
+    "phone": "",
+    "email": "",
+    "hours": "Contact for availability",
+    "season": "Seasonal",
+    "snap_hip": "",
+    "vendor_info": "",
+    "social": "",
+    "latitude": 42.4556,
+    "longitude": -71.6730,
+    "black_owned": "Yes - Liberian-owned",
+    "indoor_outdoor": "Outdoor",
+    "ej_zone": "",
+    "business_type": "farm",
+    "categories": [
+      "produce_farm"
+    ],
+    "listing_tier": "basic",
+    "featured": false,
+    "verified": true,
+    "supplier_info": {
+      "service_area": "Central Massachusetts",
+      "specialties": [
+        "Traditional Liberian crops",
+        "Diverse vegetables",
+        "Cultural food varieties",
+        "World Farmers program participant"
+      ],
+      "years_experience": 5,
+      "pricing_tier": "Contact for availability and pricing"
+    }
+  },
+  {
+    "id": 2007,
+    "business_name": "Fire Code Design, LLC",
+    "location": "Roxbury, MA",
+    "activity": "Fire protection services - first Black woman-owned plumbing and fire protection company in Massachusetts",
+    "website": "https://www.firecodedesign.com",
+    "instagram": "",
+    "facebook": "",
+    "phone": "(617) 442-2633",
+    "email": "info@firecodedesign.com",
     "hours": "Mon-Fri 8am-5pm",
     "season": "Year-round",
     "snap_hip": "",
     "vendor_info": "",
     "social": "",
-    "latitude": 42.2626,
-    "longitude": -71.8023,
-    "black_owned": "",
+    "latitude": 42.3299,
+    "longitude": -71.0827,
+    "black_owned": "Yes - Black woman-owned (Ronnette Taylor Lawrence)",
     "indoor_outdoor": "Indoor",
-    "ej_zone": "",
-    "business_type": "supplier",
+    "ej_zone": "Yes (Roxbury EJ)",
+    "business_type": "service_provider",
     "categories": [
-      "hempcrete_supplier",
       "sustainable_building"
     ],
     "listing_tier": "featured",
     "featured": true,
     "verified": true,
     "supplier_info": {
-      "service_area": "Massachusetts, Rhode Island, Connecticut",
+      "service_area": "Massachusetts and New England",
       "certifications": [
-        "LEED Certified",
-        "Green Building Professional"
+        "Licensed Fire Protection",
+        "Women-Owned Business"
       ],
-      "min_order": "$500",
-      "lead_time": "2-3 weeks",
       "specialties": [
-        "Hempcrete blocks and binders",
-        "Technical installation training",
-        "Custom mixing ratios",
-        "Lime plaster finishes"
+        "Fire protection systems",
+        "Plumbing services",
+        "Building safety systems",
+        "Commercial projects"
       ],
-      "years_experience": 8,
-      "pricing_tier": "Hempcrete mix: $15-25/bag | Blocks: $8-12/block | Installation: $35-50/sq ft"
+      "years_experience": 18,
+      "pricing_tier": "Commercial and residential - contact for quotes"
     }
   },
   {
-    "id": 1003,
-    "business_name": "GreenGrow Greenhouse Systems",
-    "location": "Springfield, MA",
-    "activity": "Custom greenhouse design, construction, and automation systems",
-    "website": "https://example.com/greengrow",
+    "id": 2008,
+    "business_name": "Mattapan Food and Fitness Coalition",
+    "location": "Mattapan, Boston, MA",
+    "activity": "Grassroots organization improving food and physical activity environments - farmers market operations supporting Black farmers",
+    "website": "https://www.mattapanfoodandfit.org",
     "instagram": "",
     "facebook": "",
-    "phone": "(413) 555-0200",
-    "email": "build@greengrow.com",
-    "hours": "Mon-Sat 9am-6pm",
-    "season": "Year-round",
-    "snap_hip": "",
+    "phone": "",
+    "email": "info@mattapanfoodandfitness.org",
+    "hours": "See website for market and program schedules",
+    "season": "Year-round programs, seasonal farmers market",
+    "snap_hip": "Yes",
     "vendor_info": "",
     "social": "",
-    "latitude": 42.1015,
-    "longitude": -72.5898,
-    "black_owned": "",
-    "indoor_outdoor": "Outdoor",
-    "ej_zone": "Yes (Springfield EJ)",
+    "latitude": 42.2668,
+    "longitude": -71.0929,
+    "black_owned": "Black-led organization",
+    "indoor_outdoor": "Hybrid",
+    "ej_zone": "Yes (Mattapan EJ)",
     "business_type": "service_provider",
     "categories": [
-      "greenhouse_builder",
-      "sustainable_building",
-      "agricultural_services"
+      "agricultural_services",
+      "farmers_market"
     ],
     "listing_tier": "featured",
     "featured": true,
     "verified": true,
     "supplier_info": {
-      "service_area": "Massachusetts, Connecticut, Vermont",
-      "certifications": [
-        "Licensed General Contractor",
-        "Certified Greenhouse Builder"
-      ],
-      "min_order": "$5,000",
-      "lead_time": "6-12 weeks",
+      "service_area": "Mattapan and Greater Boston",
       "specialties": [
-        "Passive solar greenhouse design",
-        "Automated climate control",
-        "Year-round growing systems",
-        "Hempcrete integration",
-        "Hydroponic and soil systems"
+        "Community health",
+        "Farmers market operations",
+        "Food access programs",
+        "Supporting Black farmers",
+        "Diaspora community engagement"
       ],
       "years_experience": 12,
-      "pricing_tier": "Small (8x10): $8K-12K | Medium (12x16): $15K-25K | Large (20x30): $35K-60K"
+      "pricing_tier": "Community programs - serves 7,000+ annually"
     }
   },
   {
-    "id": 1004,
-    "business_name": "SunPower Agricultural Solutions",
-    "location": "Boston, MA",
-    "activity": "Solar panel installation and off-grid systems for farms and greenhouses",
-    "website": "https://example.com/sunpowerag",
+    "id": 2009,
+    "business_name": "Soul Fire Farm",
+    "location": "Petersburg, NY (serves New England)",
+    "activity": "Afro-Indigenous centered community farm ending racism in food system - cooperative farm, land trust, and training programs",
+    "website": "https://www.soulfirefarm.org",
     "instagram": "",
     "facebook": "",
-    "phone": "(617) 555-0300",
-    "email": "solar@sunpowerag.com",
-    "hours": "Mon-Fri 8am-6pm",
-    "season": "Year-round",
+    "phone": "(518) 880-2034",
+    "email": "love@soulfirefarm.org",
+    "hours": "Contact for visiting hours and program schedules",
+    "season": "Year-round programs",
     "snap_hip": "",
     "vendor_info": "",
     "social": "",
-    "latitude": 42.3601,
-    "longitude": -71.0589,
-    "black_owned": "",
+    "latitude": 42.7606,
+    "longitude": -73.3648,
+    "black_owned": "Yes - Black-led cooperative",
     "indoor_outdoor": "Outdoor",
     "ej_zone": "",
     "business_type": "service_provider",
     "categories": [
-      "solar_installer",
-      "agricultural_services"
-    ],
-    "listing_tier": "featured",
-    "featured": true,
-    "verified": true,
-    "supplier_info": {
-      "service_area": "Eastern Massachusetts, Rhode Island",
-      "certifications": [
-        "NABCEP Certified",
-        "Licensed Electrician",
-        "Mass CEC Qualified"
-      ],
-      "min_order": "$3,000",
-      "lead_time": "4-8 weeks",
-      "specialties": [
-        "Agricultural solar systems",
-        "Off-grid battery systems",
-        "Greenhouse solar integration",
-        "DC pump and fan systems",
-        "Net metering and incentives"
-      ],
-      "years_experience": 15,
-      "pricing_tier": "Small (1-2kW): $4K-8K | Medium (3-5kW): $10K-18K | Large (8-10kW): $22K-35K"
-    }
-  },
-  {
-    "id": 1005,
-    "business_name": "Heritage Hemp & Lime",
-    "location": "Providence, RI",
-    "activity": "Sustainable building materials: hemp fiber, lime binders, natural insulation",
-    "website": "https://example.com/heritagehemplime",
-    "instagram": "",
-    "facebook": "",
-    "phone": "(401) 555-0400",
-    "email": "info@heritagehemplime.com",
-    "hours": "Tue-Sat 10am-5pm",
-    "season": "Year-round",
-    "snap_hip": "",
-    "vendor_info": "",
-    "social": "",
-    "latitude": 41.8240,
-    "longitude": -71.4128,
-    "black_owned": "Yes",
-    "indoor_outdoor": "Indoor",
-    "ej_zone": "",
-    "business_type": "supplier",
-    "categories": [
-      "hempcrete_supplier",
-      "sustainable_building"
+      "agricultural_services",
+      "produce_farm"
     ],
     "listing_tier": "premium",
     "featured": true,
     "verified": true,
     "supplier_info": {
-      "service_area": "Rhode Island, Massachusetts, Connecticut",
+      "service_area": "New England and Upstate NY",
       "certifications": [
-        "Organic Certified",
-        "Green Building Council Member"
+        "Housing Cooperative",
+        "501(c)(3) Nonprofit"
       ],
-      "min_order": "$250",
-      "lead_time": "1-2 weeks",
       "specialties": [
-        "Locally-sourced hemp fiber",
-        "Natural hydraulic lime",
-        "Hemp insulation batts",
-        "Lime plasters and renders",
-        "Workshops and training"
-      ],
-      "years_experience": 6,
-      "pricing_tier": "Hemp fiber: $18-28/bag | Lime binder: $22-35/bag | Consulting: $125/hr"
-    }
-  },
-  {
-    "id": 1006,
-    "business_name": "Urban Greenhouse Collective",
-    "location": "Cambridge, MA",
-    "activity": "Community greenhouse building cooperative and education center",
-    "website": "https://example.com/urbangreenhouse",
-    "instagram": "",
-    "facebook": "",
-    "phone": "(617) 555-0500",
-    "email": "hello@urbangreenhouse.coop",
-    "hours": "Wed-Sun 11am-6pm",
-    "season": "Year-round",
-    "snap_hip": "Yes",
-    "vendor_info": "",
-    "social": "",
-    "latitude": 42.3736,
-    "longitude": -71.1097,
-    "black_owned": "Black-led cooperative",
-    "indoor_outdoor": "Hybrid",
-    "ej_zone": "",
-    "business_type": "service_provider",
-    "categories": [
-      "greenhouse_builder",
-      "agricultural_services"
-    ],
-    "listing_tier": "basic",
-    "featured": false,
-    "verified": true,
-    "supplier_info": {
-      "service_area": "Greater Boston area",
-      "certifications": [
-        "Worker Cooperative",
-        "NOFA-MA Certified Organic"
-      ],
-      "min_order": "Community-based pricing",
-      "lead_time": "Varies by project",
-      "specialties": [
-        "DIY greenhouse kits",
-        "Community build workshops",
-        "Urban food production",
-        "Sliding scale pricing",
-        "Youth education programs"
-      ],
-      "years_experience": 4,
-      "pricing_tier": "Workshops: $50-150/person | DIY kits: $2K-6K | Community builds: Sliding scale"
-    }
-  },
-  {
-    "id": 1007,
-    "business_name": "EcoBuilders Supply",
-    "location": "Northampton, MA",
-    "activity": "Natural building materials, tools, and supplies for sustainable construction",
-    "website": "https://example.com/ecobuilders",
-    "instagram": "",
-    "facebook": "",
-    "phone": "(413) 555-0600",
-    "email": "supplies@ecobuilders.com",
-    "hours": "Mon-Sat 8am-6pm",
-    "season": "Year-round",
-    "snap_hip": "",
-    "vendor_info": "",
-    "social": "",
-    "latitude": 42.3251,
-    "longitude": -72.6412,
-    "black_owned": "",
-    "indoor_outdoor": "Indoor",
-    "ej_zone": "",
-    "business_type": "supplier",
-    "categories": [
-      "sustainable_building",
-      "hempcrete_supplier"
-    ],
-    "listing_tier": "basic",
-    "featured": false,
-    "verified": true,
-    "supplier_info": {
-      "service_area": "Western Massachusetts, Vermont",
-      "certifications": [
-        "Green Business Certified"
-      ],
-      "min_order": "$100",
-      "lead_time": "In-stock items: Same day | Special orders: 1-3 weeks",
-      "specialties": [
-        "Hempcrete materials",
-        "Reclaimed lumber",
-        "Natural insulation",
-        "Clay and lime plasters",
-        "Green building tools"
+        "Farmer training programs",
+        "Land trust operations",
+        "Afro-Indigenous farming practices",
+        "Food justice education",
+        "Cooperative organizing"
       ],
       "years_experience": 10,
-      "pricing_tier": "Retail supply store - competitive pricing | Bulk discounts available"
+      "pricing_tier": "Sliding scale programs, donations accepted"
     }
   },
   {
-    "id": 1008,
-    "business_name": "Harvest Solar & Storage",
-    "location": "Brockton, MA",
-    "activity": "Solar installations and battery storage systems for agricultural operations",
-    "website": "https://example.com/harvestsolar",
+    "id": 2010,
+    "business_name": "Northeast Farmers of Color Land Trust",
+    "location": "New England Regional",
+    "activity": "Non-profit collective acquiring land for Farmers of Color to tend throughout New England - land access and farmer support",
+    "website": "https://nefoclandtrust.org",
     "instagram": "",
     "facebook": "",
-    "phone": "(508) 555-0700",
-    "email": "harvest@harvestsolar.com",
-    "hours": "Mon-Fri 9am-5pm",
-    "season": "Year-round",
+    "phone": "",
+    "email": "",
+    "hours": "Contact via website",
+    "season": "Year-round operations",
     "snap_hip": "",
     "vendor_info": "",
     "social": "",
-    "latitude": 42.0834,
-    "longitude": -71.0184,
-    "black_owned": "",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "black_owned": "Farmers of Color-led cooperative",
     "indoor_outdoor": "Outdoor",
-    "ej_zone": "Yes (Brockton EJ)",
+    "ej_zone": "",
     "business_type": "service_provider",
     "categories": [
-      "solar_installer"
+      "agricultural_services"
     ],
-    "listing_tier": "basic",
-    "featured": false,
+    "listing_tier": "featured",
+    "featured": true,
     "verified": true,
     "supplier_info": {
-      "service_area": "Southeastern Massachusetts",
-      "certifications": [
-        "Licensed Electrician",
-        "Solar PV Installer"
-      ],
-      "min_order": "$2,500",
-      "lead_time": "3-6 weeks",
+      "service_area": "New England region (MA, CT, RI, VT, NH, ME, NY)",
       "specialties": [
-        "Off-grid solar systems",
-        "Battery backup",
-        "Farm solar installations",
-        "Well pump solar",
-        "Greenhouse climate control power"
+        "Land acquisition for BIPOC farmers",
+        "Farmer support services",
+        "Network building",
+        "Land access advocacy",
+        "Resource sharing"
       ],
-      "years_experience": 7,
-      "pricing_tier": "Starting at $8K for basic systems | Custom quotes for agricultural projects"
+      "years_experience": 5,
+      "pricing_tier": "Land trust services - member-based"
     }
   }
 ]
