@@ -1,4 +1,5 @@
 import { Business } from '../types';
+import { getBusinessCategories } from '../utils/businessCategories';
 
 interface BusinessCardProps {
   business: Business;
@@ -167,7 +168,7 @@ export default function BusinessCard({ business, onLocationClick }: BusinessCard
             </span>
           )}
 
-          {business.categories && business.categories.map((cat, idx) => (
+          {getBusinessCategories(business).map((cat, idx) => (
             <span key={idx} className="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs">
               {cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
             </span>
