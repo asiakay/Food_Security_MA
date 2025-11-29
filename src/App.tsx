@@ -4,6 +4,7 @@ import FilterPanel from './components/FilterPanel';
 import MapView from './components/MapView';
 import { Business, FilterState } from './types';
 import businessesData from './data/businesses.json';
+import { getBusinessCategories } from './utils/businessCategories';
 
 function App() {
   const [view, setView] = useState<'list' | 'map'>('list');
@@ -63,9 +64,10 @@ function App() {
         filters.businessType === 'all' ||
         business.business_type === filters.businessType;
 
+      const businessCategories = getBusinessCategories(business);
+
       const matchesCategory =
-        filters.category === 'all' ||
-        (business.categories && business.categories.includes(filters.category));
+        filters.category === 'all' || businessCategories.includes(filters.category);
 
       const matchesListingTier =
         filters.listingTier === 'all' ||
