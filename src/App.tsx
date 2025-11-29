@@ -5,6 +5,7 @@ import MapView from './components/MapView';
 import { Business, FilterState } from './types';
 import businessesData from './data/businesses.json';
 import { getBusinessCategories } from './utils/businessCategories';
+import { getBusinessType } from './utils/businessType';
 
 function App() {
   const [view, setView] = useState<'list' | 'map'>('list');
@@ -60,9 +61,11 @@ function App() {
           (business.indoor_outdoor.toLowerCase().includes('hybrid') ||
             business.indoor_outdoor.toLowerCase().includes('/')));
 
+      const derivedBusinessType = getBusinessType(business);
+
       const matchesBusinessType =
         filters.businessType === 'all' ||
-        business.business_type === filters.businessType;
+        derivedBusinessType === filters.businessType;
 
       const businessCategories = getBusinessCategories(business);
 

@@ -1,5 +1,6 @@
 import { Business } from '../types';
 import { getBusinessCategories } from '../utils/businessCategories';
+import { getBusinessType } from '../utils/businessType';
 
 interface BusinessCardProps {
   business: Business;
@@ -8,8 +9,10 @@ interface BusinessCardProps {
 
 export default function BusinessCard({ business, onLocationClick }: BusinessCardProps) {
   const hasCoordinates = business.latitude !== null && business.longitude !== null;
+  const derivedBusinessType = getBusinessType(business);
   const isShowcase = business.showcase_project?.is_showcase;
-  const isSupplier = business.business_type === 'supplier' || business.business_type === 'service_provider';
+  const isSupplier =
+    derivedBusinessType === 'supplier' || derivedBusinessType === 'service_provider';
 
   return (
     <div className={`bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow ${
